@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTTP with JavaScript</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>main { margin-top: 70px; }</style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Tuts+ HTTP with JavaScript</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <form id="search-form" action="">
+                    <div class="form-group">
+                        <label for="manufacturer">Manufacturer</label>
+                        <input type="text" id="manufacturer" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="neck">Neck</label>
+                        <input type="text" id="neck" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="frets">Numbers of Frets</label>
+                        <input type="text" id="frets" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <h4>Results</h4>
+                <ul id="search-results"></ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
